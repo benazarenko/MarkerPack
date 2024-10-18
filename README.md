@@ -30,7 +30,7 @@ Let's create a radial trigger marker that runs commands on player entering and l
 
 Here you see the required nbt fields stored in the `data`. You can stay close to your marker and run
 `data modify entity @n[type=marker] data.r set value 5`
-or if, you use Axiom, just rightclick the marker and copy-paste all the values in the editor.
+or, if you use Axiom, just rightclick the marker and copy-paste all the values in the editor.
 
 Next we have to set type of our marker and enable it. To do this, just add `trigger` and `enable` tags with `tag` command
 `tag @n[type=marker] trigger`
