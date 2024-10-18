@@ -5,7 +5,7 @@ This datapack gives you ability to use markers to trigger various events. You ca
 
 ## Installation
 
-Copy the datapack to your `<world_name>/datapacks` folder, and run the game. By default you should see a green message `Marker datapack loaded`. If you want to hide this message, just go to [here](data/markerpack/function/backend/load.mcfunction) and remove/comment the line that starts with `tellraw`.
+Copy the datapack to your `<world_name>/datapacks` folder, and run the game. By default you should see a green message `Marker datapack loaded`. If you want to hide this message, just go to [here](data/markerpack/function/load.mcfunction) and remove/comment the line that starts with `tellraw`.
 
 ## Usage
 
@@ -74,7 +74,7 @@ All the commands are run as the marker, and at marker's location. You can write 
 
 In some `trigger` markers you might want to have only `on_enter` or `on_leave` commands. But both are required to run. To make it work, you can set the other value to `function markerpack:nop`. This is an empty function that does nothing. If the player dies while in the `trigger` area, the `on_leave` command will run after the player respawns.
 
-The datapack works on multiplayer. But it doesn't give you information about the players that has entered the area. *This could be added in future releases as a macro.*
+The datapack works in multiplayer. But it doesn't give you information about the players that has entered the area. *This could be added in future releases as a macro.*
 
 ### NBT tags
 
